@@ -58,7 +58,7 @@ If you prefer complete privacy and control, you can host the PHP backend yoursel
 3.  Note down your **Client ID** and **Client Secret**.
 4.  In the App Settings, add a **Redirect URI**:
     *   `http://<your-server-ip-or-domain>/callback.php`
-    *   Example: `http://192.168.1.50:8787/callback.php` or `https://my-domain.com/spotify/callback.php`
+    *   Example: `http://localhost:8787/callback.php` or `https://my-domain.com/spotify/callback.php`
 
 #### 2. Deploy Backend
 The `backend_php` folder contains the relay server.
@@ -74,6 +74,7 @@ The `backend_php` folder contains the relay server.
 #### 3. Update Firmware
 1.  Open `newspotify/Globals.cpp`.
 2.  Change the `relay_base_url` to point to your new server:
+    ```cpp
     ```cpp
     const char *relay_base_url = "http://<your-server-ip>:8787";
     ```
