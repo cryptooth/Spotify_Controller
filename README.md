@@ -4,6 +4,10 @@
 
 A feature-rich Spotify controller based on ESP32-S3, featuring an OLED display, Rotary Encoder navigation, and a secure "Relay Server" authentication flow.
 
+> [!NOTE]
+> **Credits & Inspiration:** This project is heavily based on the excellent [espspotifydisplay](https://github.com/andrei7c4/espspotifydisplay) by **andrei7c4**. 
+> The original project stopped working due to changes in Spotify's authentication methods. This version revitalizes it with a new **PHP Relay Server** architecture to handle OAuth2 securely, along with updated UI and features. Special thanks to Andrei for the inspiration! 🙌
+
 ![OLED QR Code](IMG_8702.JPG)
 *Scan the QR code on the OLED to authenticate securely.*
 
