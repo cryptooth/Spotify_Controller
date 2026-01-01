@@ -21,9 +21,26 @@ A feature-rich Spotify controller based on ESP32-S3, featuring an OLED display, 
 *   **SSD1322 OLED Display** (256x64) via SPI
 *   **Rotary Encoder** (KY-040 or similar)
 
-**Pinout (Configurable in `Globals.h`):**
-*   **OLED:** CLK=4, MOSI=6, CS=7, DC=15, RES=16
-*   **Encoder:** CLK=1, DT=3, SW=5
+**Wiring Guide:**
+
+| Component | Pin Name | ESP32 Pin | Notes |
+| :--- | :--- | :--- | :--- |
+| **OLED** | **CLK** (D0) | GPIO 4 | Clock |
+| **OLED** | **MOSI** (D1) | GPIO 6 | Data |
+| **OLED** | **CS** | GPIO 7 | Chip Select |
+| **OLED** | **RES** | GPIO 2 | Reset |
+| **OLED** | **DC** | *Disconnected* | Not used in 3-Wire SPI |
+| | | | |
+| **Encoder** | **CLK** | GPIO 1 | Rotation A |
+| **Encoder** | **DT** | GPIO 3 | Rotation B |
+| **Encoder** | **SW** | GPIO 5 | Button |
+
+> [!IMPORTANT]
+> **Jumper Configuration (OLED)**
+> This project uses **3-Wire SPI** (9-bit). Ensure your OLED module jumpers are set correctly:
+> *   **BS0:** 0 (Connected to GND)
+> *   **BS1:** 1 (Connected to VCC)
+> *   *Check your specific display datasheet if different.*
 
 ---
 
