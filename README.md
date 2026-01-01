@@ -1,6 +1,6 @@
 # ESP32 Spotify Remote & OLED Display 🎵
 
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/belek)
+
 
 A feature-rich Spotify controller based on ESP32-S3, featuring an OLED display, Rotary Encoder navigation, and a secure "Relay Server" authentication flow.
 
@@ -103,3 +103,9 @@ The `backend_php` folder contains the relay server.
 ## License
 
 Free to use and modify!
+
+<div align="right">
+  <a href="https://www.buymeacoffee.com/belek" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;" >
+  </a>
+</div>
