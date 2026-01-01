@@ -75,8 +75,7 @@ The `backend_php` folder contains the relay server.
 1.  Open `newspotify/Globals.cpp`.
 2.  Change the `relay_base_url` to point to your new server:
     ```cpp
-    ```cpp
-    const char *relay_base_url = "http://<your-server-ip>:8787";
+    const char *relay_base_url = "http://<your-server-ip>";
     ```
 3.  Re-upload the firmware to the ESP32.
 
