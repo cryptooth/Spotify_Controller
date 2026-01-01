@@ -58,7 +58,7 @@ If you prefer complete privacy and control, you can host the PHP backend yoursel
 3.  Note down your **Client ID** and **Client Secret**.
 4.  In the App Settings, add a **Redirect URI**:
     *   `http://<your-server-ip-or-domain>/callback.php`
-    *   Example: `http://localhost:8787/callback.php` or `https://my-domain.com/spotify/callback.php`
+    *   Example: `https://my-domain.com/spotify/callback.php`
 
 #### 2. Deploy Backend
 The `backend_php` folder contains the relay server.
