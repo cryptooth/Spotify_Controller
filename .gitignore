@@ -1,0 +1,17 @@
+# Secrets
+backend_php/config.php
+backend_php/tokens/
+
+# PlatformIO / Arduino
+.pio/
+.vscode/
+**/build/
+
+# Mac System Files
+.DS_Store
+
+# Other
+dedoy_oled/
+espspotifydisplay-master/
+esptwitterclient-master/
+newdeezer/

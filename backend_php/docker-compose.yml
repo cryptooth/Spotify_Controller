@@ -1,0 +1,20 @@
+
+
+services:
+  spotify-relay:
+    image: php:8.2-apache
+    container_name: spotify-relay
+    restart: unless-stopped
+    ports:
+      - "8787:80"
+    volumes:
+      - /home/spotify-server:/var/www/html
+    environment:
+      - TZ=Europe/Istanbul
+
+# KURULUM NOTLARI:
+# 1. Bu dosyayı Portainer -> Stacks -> Add Stack kısmına yapıştırın.
+# 2. Sunucunuzda bir klasör açın (örn: /opt/spotify-relay)
+# 3. Hazırladığım php dosyalarını (config.php, login.php vs.) bu klasörün içine atın.
+# 4. 'volumes' kısmındaki './html' yolunu, sunucudaki klasör yoluyla değiştirin (örn: /opt/spotify-relay)
+# 5. tokens klasörüne yazma izni vermeyi unutmayın (chmod 777 tokens)
