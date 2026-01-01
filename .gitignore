@@ -7,11 +7,5 @@ backend_php/tokens/
 .vscode/
 **/build/
 
-# Mac System Files
+# System Files
 .DS_Store
-
-# Other
-dedoy_oled/
-espspotifydisplay-master/
-esptwitterclient-master/
-newdeezer/
