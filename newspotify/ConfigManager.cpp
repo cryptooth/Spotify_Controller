@@ -135,6 +135,9 @@ void setupConfig() {
 
   loadConfig();
 
+  // Apply loaded brightness immediately
+  u8g2.setContrast(currentBrightness);
+
   // 2. Connect WiFi
   WiFiManager wifiManager;
   drawStatus("CONNECTING...", "Please Wait");
